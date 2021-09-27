@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@font-face {
+  font-family: 'Rift';
+  src: url(../fonts/Fort-Foundry-Rift-Regular.otf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(204, 204, 204, 0.16);
+}
+
+.container {
+  height: 1334px;
+  width: 1280px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px 1px grey;
+}
+
+.header-image-1 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 549px;
+}
+
+.header-image-2 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 549px;
+}
+
+.header-image-3 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 549px;
+}
+
+.body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body-header {
+  margin: 3em 0 1em 0;
+  width: 494px;
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 20px;
+  color: #003e52;
+  letter-spacing: 0;
+}
+
+.divider-bar {
+  margin: 1em;
+  width: 45px;
+  height: 2px;
+  background-color: #b4b3b3;
+}
+
+.grid {
+  margin-bottom: 4em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  font-family: Rift;
+  font-size: 24px;
+  color: #003e52;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-items: space-between;
+}
+
+.grid-item img {
+  margin-bottom: 24px;
+}
+
+.grid-item h3 {
+  width: 239px;
+  height: 119px;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 1280px;
+  height: 88px;
+  background-color: #002f3e;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    box-shadow: none;
+  }
+}
